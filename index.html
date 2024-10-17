@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-leagueSpartan bg-veryDarkDesaturatedBlueMbg h-screen flex flex-col justify-center items-center">
+
+  <div id="calculator-container" class="w-4/5 md:w-2/3 lg:w-1/3 mx-auto flex flex-col gap-3">
+
+    <div id="calc-header" class="flex flex-row justify-between items-center mb-4">
+
+      <h3 id="calc-label" class="text-white font-bold text-xl">calc</h3>
+
+      <div id="theme" class="flex flex-row items-end relative items-center justify-end ">
+
+        <small id="theme-label" class="uppercase text-white text-xs font-bold">theme</small>
+
+        <span id="theme-options" class="absolute bottom-6 right-0 text-white tracking-widest font-bold">1 2 3</span>
+
+        <div id="toggle-container" class="flex flex-col ml-8 w-16 h-6 p-1 rounded-full bg-veryDarkDesaturatedBlueScrBg">
+          
+          <div id="toggle" class="rounded-full bg-redKeyBg w-4 h-4 transition-prop"></div>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div id="display" class="bg-veryDarkDesaturatedBlueScrBg w-full py-7 px-6 rounded-lg flex justify-end">
+      <h1 id="calc-result" class="text-white text-5xl font-bold">0</h1>
+    </div>
+  
+    <div id="button-container" class="grid grid-cols-4 bg-veryDarkDesaturatedBlueTbgKpBg p-5 rounded-lg place-items-center gap-5">
+      <span id="seven" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl items-center bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">7</span>
+      <span id="eight" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">8</span>
+      <span id="nine" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">9</span>
+      <span id="delete" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-veryDarkDesaturatedBlueMbg text-white font-bold rounded text-lightGrayishOrangeKeyBg uppercase box-shadow-DesaturatedDarkBlueKeyS">del</span>
+  
+      <span id="four" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">4</span>
+      <span id="five" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">5</span>
+      <span id="six" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">6</span>
+      <span id="add" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">+</span>
+  
+      <span id="one" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">1</span>
+      <span id="two" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">2</span>
+      <span id="three" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">3</span>
+      <span id="minus" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">-</span>
+  
+      <span id="point" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">.</span>
+      <span id="zero" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">0</span>
+      <span id="divide" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">/</span>
+      <span id="multiply" class="place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-lightGrayishOrangeKeyBg font-bold rounded text-veryDarkGrayishBlue box-shadow-LightGrayishOrange">×</span>
+  
+      <span id="reset" class="col-span-2 place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-veryDarkDesaturatedBlueMbg text-white font-bold rounded text-lightGrayishOrangeKeyBg uppercase box-shadow-DesaturatedDarkBlueKeyS">reset</span>
+      <span id="equals" class="col-span-2 place-self-center pt-3 pb-2 w-full flex flex-row justify-center text-2xl bg-redKeyBg text-white font-bold rounded text-lightGrayishOrangeKeyBg box-shadow-DarkRedKeyS">=</span>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Chukwubuikem4">Chukwubuikem4</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

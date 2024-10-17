@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+.font-leagueSpartan{
+    font-family: 'League Spartan';
+}
+
+/* Theme One box shadow */
+.box-shadow-LightGrayishOrange{
+    box-shadow: 0 2.5px 1.5px hsl(28, 16%, 65%);
+}
+
+.box-shadow-DesaturatedDarkBlueKeyS{
+    box-shadow: 0 2.5px 1.5px hsl(224, 28%, 35%);
+}
+
+.box-shadow-DarkRedKeyS{
+    box-shadow: 0 2.5px 1.5px hsl(6, 70%, 34%);
+}
+
+/* Toggle movement */
+.transition-prop{
+    transition: transform ease-in 150ms;
+}
+
+.pos-1{
+    transform: translateX(0)
+}
+
+.pos-2{
+    transform: translateX(17.5px);
+}
+
+.pos-3{
+    transform: translateX(39px)
+}
+
+
+
+
+
