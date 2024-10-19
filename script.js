@@ -243,34 +243,49 @@ const displayValue = (event) =>{
 }
 
 reset_span.addEventListener('click', (event)=>{
-    clickedButton = event.target
-
-    calculation = "0";
+    calculation = "";
     calcResult_h1.innerText = calculation;
 
-    if(clickedButton === reset_span && currentTogglePosition === 1){
-        reset_span.style.backgroundColor = "blue";
+    if(event.target && currentTogglePosition === 1){
+        reset_span.style.backgroundColor = "hsl(225, 30%, 63%)";
 
-    } else if (clickedButton === reset_span && currentTogglePosition === 2){
-        reset_span.style.backgroundColor = "red";
-
-    } else if (clickedButton === reset_span && currentTogglePosition === 3){
-        reset_span.style.backgroundColor = "green";
+    } else if (event.target && currentTogglePosition === 2){
+        reset_span.style.backgroundColor = "hsl(185, 39%, 60%)";
+        
+    } else if (event.target && currentTogglePosition === 3){
+        reset_span.style.backgroundColor = "hsl(281, 73%, 46%)";
     }
 })
 
-equals_span.addEventListener('click', ()=>{
+equals_span.addEventListener('click', (event)=>{
     calcResult_h1.innerText = eval(calculation);
-    
-    equals_span.style.backgroundColor = "hsl(6, 56%, 60%)"
+
+    if(event.target && currentTogglePosition === 1){
+        equals_span.style.backgroundColor = "hsl(6, 54%, 59%)";
+
+    } else if (event.target && currentTogglePosition === 2){
+        equals_span.style.backgroundColor = "hsl(25, 54%, 53%)";
+        
+    } else if (event.target && currentTogglePosition === 3){
+        equals_span.style.backgroundColor = "hsl(176, 62%, 64%)";
+    }
 })
 
-delete_span.addEventListener('click', ()=>{
+delete_span.addEventListener('click', (event)=>{
+
     if (calcResult_h1 && calcResult_h1.textContent !== "0"){
         calcResult_h1.textContent = calcResult_h1.textContent.slice(0, -1)
     };
 
-    delete_span.style.backgroundColor = "hsl(225, 40%, 73%)"
+    if(event.target && currentTogglePosition === 1){
+        delete_span.style.backgroundColor = "hsl(225, 30%, 63%)";
+
+    } else if (event.target && currentTogglePosition === 2){
+        delete_span.style.backgroundColor = "hsl(185, 39%, 60%)";
+        
+    } else if (event.target && currentTogglePosition === 3){
+        delete_span.style.backgroundColor = "hsl(281, 73%, 46%)";
+    }
 })
 
 // Toggle Active Background and transition
