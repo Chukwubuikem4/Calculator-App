@@ -46,56 +46,217 @@ const displayValue = (event) =>{
     if(clickedButton === one_span){
         calculation += 1;
 
+        if(clickedButton === one_span && currentTogglePosition === 1){
+            one_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === one_span && currentTogglePosition === 2){
+            one_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === one_span && currentTogglePosition === 3){
+            one_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === two_span){
         calculation += 2;
+
+        if(clickedButton === two_span && currentTogglePosition === 1){
+            two_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === two_span && currentTogglePosition === 2){
+            two_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === two_span && currentTogglePosition === 3){
+            two_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
 
     } else if(clickedButton === three_span){
         calculation += 3;
 
+        if(clickedButton === three_span && currentTogglePosition === 1){
+            three_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === three_span && currentTogglePosition === 2){
+            three_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === three_span && currentTogglePosition === 3){
+            three_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === four_span){
         calculation += 4;
+
+        if(clickedButton === four_span && currentTogglePosition === 1){
+            four_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === four_span && currentTogglePosition === 2){
+            four_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === four_span && currentTogglePosition === 3){
+            four_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
 
     } else if(clickedButton === five_span){
         calculation += 5;
 
+        if(clickedButton === five_span && currentTogglePosition === 1){
+            five_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === five_span && currentTogglePosition === 2){
+            five_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === five_span && currentTogglePosition === 3){
+            five_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     }  else if(clickedButton === six_span){
         calculation += 6;
+
+        if(clickedButton === six_span && currentTogglePosition === 1){
+            six_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === six_span && currentTogglePosition === 2){
+            six_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === six_span && currentTogglePosition === 3){
+            six_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
 
     } else if(clickedButton === seven_span){
         calculation += 7;
 
+        if(clickedButton === seven_span && currentTogglePosition === 1){
+            seven_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === seven_span && currentTogglePosition === 2){
+            seven_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === seven_span && currentTogglePosition === 3){
+            seven_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === eight_span){
         calculation += 8;
+
+        if(clickedButton === eight_span && currentTogglePosition === 1){
+            eight_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === eight_span && currentTogglePosition === 2){
+            eight_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === eight_span && currentTogglePosition === 3){
+            eight_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
 
     } else if(clickedButton === nine_span){
         calculation += 9;
 
+        if(clickedButton === nine_span && currentTogglePosition === 1){
+            nine_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === nine_span && currentTogglePosition === 2){
+            nine_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === nine_span && currentTogglePosition === 3){
+            nine_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === zero_span){
         calculation += 0;
+
+        if(clickedButton === zero_span && currentTogglePosition === 1){
+            zero_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === zero_span && currentTogglePosition === 2){
+            zero_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === zero_span && currentTogglePosition === 3){
+            zero_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
 
     } else if(clickedButton === add_span){
         calculation += "+";
 
+        if(clickedButton === add_span && currentTogglePosition === 1){
+            add_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === add_span && currentTogglePosition === 2){
+            add_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === add_span && currentTogglePosition === 3){
+            add_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === minus_span){
         calculation += "-";
+
+        if(clickedButton === minus_span && currentTogglePosition === 1){
+            minus_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === minus_span && currentTogglePosition === 2){
+            minus_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === minus_span && currentTogglePosition === 3){
+            minus_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
 
     } else if(clickedButton === multiply_span){
         calculation += "*";
 
+        if(clickedButton === multiply_span && currentTogglePosition === 1){
+            multiply_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === multiply_span && currentTogglePosition === 2){
+            multiply_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === multiply_span && currentTogglePosition === 3){
+            multiply_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === divide_span){
         calculation += "/";
 
+        if(clickedButton === divide_span && currentTogglePosition === 1){
+            divide_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === divide_span && currentTogglePosition === 2){
+            divide_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === divide_span && currentTogglePosition === 3){
+            divide_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
+
     } else if(clickedButton === point_span){
         calculation += ".";
+
+        if(clickedButton === point_span && currentTogglePosition === 1){
+            point_span.style.backgroundColor = "hsl(20, 18%, 95%)";
+
+        } else if (clickedButton === point_span && currentTogglePosition === 2){
+            point_span.style.backgroundColor = "hsl(30, 11%, 96%)";
+
+        } else if (clickedButton === point_span && currentTogglePosition === 3){
+            point_span.style.backgroundColor = "hsl(268, 48%, 45%)";
+        }
     }
 
     calcResult_h1.innerText = calculation;
 }
 
-reset_span.addEventListener('click', ()=>{
+reset_span.addEventListener('click', (event)=>{
+    clickedButton = event.target
+
     calculation = "0";
     calcResult_h1.innerText = calculation;
-    reset_span.style.backgroundColor = "hsl(225, 40%, 73%)"
+
+    if(clickedButton === reset_span && currentTogglePosition === 1){
+        reset_span.style.backgroundColor = "blue";
+
+    } else if (clickedButton === reset_span && currentTogglePosition === 2){
+        reset_span.style.backgroundColor = "red";
+
+    } else if (clickedButton === reset_span && currentTogglePosition === 3){
+        reset_span.style.backgroundColor = "green";
+    }
 })
 
 equals_span.addEventListener('click', ()=>{
